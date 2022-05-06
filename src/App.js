@@ -1,24 +1,19 @@
-import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import { Details } from './components/Details';
 import { Header } from './components/Header';
-import { Results } from './components/Results';
+import { Home } from './Pages/Home';
+import { Data} from './Pages/Data';
 
-
-
-function App() {
+export default function App() {
   return (
-<>
-< Header />
+<BrowserRouter>
+  < Header />
 
-< Details />
-
-< Results />
-
-
-</>
+  <Routes>
+    <Route path='/' element={ < Home />} />
+    <Route path='/data' element={ < Data />} />
+  </Routes>
+</BrowserRouter>
   );
   
 }
-
-export default App;
