@@ -9,12 +9,12 @@ export const Home = () => {
     <> 
     <div className='welcome'>
       <h1>Welcome to Insight,</h1>
-      <p>This is a tool for you... you psyco mother fu%#$"/)</p>
+      <p>This is a tool for you... </p>
     </div>
 
     
       <div className='container-home'>
-      <form action='/data'> 
+      <form action='/data' onSubmit=""> 
         <div className='col-12'>
             <div className="row">
               < Question

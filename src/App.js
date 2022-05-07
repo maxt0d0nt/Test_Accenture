@@ -4,12 +4,13 @@ import { Header } from './components/Header';
 import { Home } from './Pages/Home';
 import { Data} from './Pages/Data';
 
+
 export default function App() {
   return (
 <BrowserRouter>
   < Header />
-
-  <Routes>
+    
+   <Routes>
     <Route path='/' element={ < Home />} />
     <Route path='/data' element={ < Data />} />
   </Routes>
