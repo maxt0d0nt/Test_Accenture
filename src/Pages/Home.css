@@ -9,13 +9,18 @@
 }
 
 .container-home {
-    display: flex;
+    
     margin: auto;
     padding: auto;
     width: 100%;
     height: 450px;
     
+}
 
+.col {
+
+    margin: auto;
+    padding: auto;
 }
 
 .Btn {
@@ -23,4 +28,3 @@
     display: flex;
     justify-content: center;
 }
-

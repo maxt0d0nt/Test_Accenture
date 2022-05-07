@@ -9,13 +9,16 @@ export const Home = () => {
     <> 
     <div className='welcome'>
       <h1>Welcome to Insight,</h1>
-      <p>This is a tool for you... </p>
+      <h3>Uncover the Power of Psychological Safety with InsightScan</h3>
+     
+      <h5> Please answer the following questions: </h5>
     </div>
+    
 
     
       <div className='container-home'>
       <form action='/data' onSubmit=""> 
-        <div className='col-12'>
+        <div className='col'>
             <div className="row">
               < Question
               question="If you make a mistake on this team. 
@@ -35,7 +38,7 @@ export const Home = () => {
 
           <div className='Btn'>
           <Link to="/data">
-          <button type="button" class="btn btn-primary btn-lg">Submit</button>
+          <button type="button" class="btn btn-danger btn-lg">Submit</button>
           </Link>
           </div>
           </form>

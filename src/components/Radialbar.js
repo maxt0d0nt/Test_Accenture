@@ -12,7 +12,7 @@ export class RadialBar extends React.Component {
         series: [props.valorA, props.valorB, props.valorC],
         options: {
           chart: {
-            height: 350,
+            height: 280,
             type: 'radialBar',
           },
           plotOptions: {

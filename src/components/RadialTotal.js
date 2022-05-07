@@ -13,7 +13,7 @@ export class RadialTotal extends React.Component {
         series: [75],
         options: {
           chart: {
-            height: 350,
+            height: 280,
             type: 'radialBar',
             toolbar: {
               show: false

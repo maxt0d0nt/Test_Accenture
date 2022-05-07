@@ -1,5 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .container{
-    display:contents
+display: contents;
+    
 }
 
 .navbar {
@@ -17,4 +24,12 @@
     width: 100%;
     height: 2vh;
     background-image: linear-gradient(265deg, #ff6ca0 0, #ff569c 25%, #ee3895 50%, #d70a8f 75%, #cb0593 100%);    display: flex;
+}
+
+.title {
+    display: flex;
+}
+
+.title-2 {
+    color: #54595F
 }
