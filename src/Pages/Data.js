@@ -7,6 +7,7 @@ export const Data = () => {
     <>
     < Details />
     < Results />
+   
     </>
   )
 }

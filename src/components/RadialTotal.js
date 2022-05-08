@@ -10,7 +10,7 @@ export class RadialTotal extends React.Component {
 
       this.state = {
       
-        series: [75],
+        series: [props.valorTotal],
         options: {
           chart: {
             height: 280,

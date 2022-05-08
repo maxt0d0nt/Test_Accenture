@@ -1,0 +1,25 @@
+{
+  "range": [
+    {
+      "myRangeA": 45,
+      "myRangeB": 55,
+      "myRangeC": 60,
+      "id": 1
+    },
+    {
+      "myRangeA": 65,
+      "myRangeB": 75,
+      "myRangeC": 80,
+      "id": 2
+    },
+    {
+      "myRangeA": 55,
+      "myRangeB": 70,
+      "myRangeC": 50,
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ]
+}
