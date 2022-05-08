@@ -1,8 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-
-
 export class RadialBar extends React.Component {
     constructor(props) {
       super(props);
@@ -37,22 +35,13 @@ export class RadialBar extends React.Component {
           },
           labels: ['Make a mistake', 'Take a risk', 'Unique skills and talents'],
         },
-      
-      
       };
     }
-
-  
-
     render() {
       return (
-        
-
-  <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={350} />
-</div>
-
-
+        <div id="chart">
+          <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={350} />
+        </div>
       );
     }
   }

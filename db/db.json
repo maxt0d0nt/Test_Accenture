@@ -19,7 +19,16 @@
       "id": 3
     },
     {
+      "myRangeA": 85,
+      "myRangeB": 74,
+      "myRangeC": 58,
       "id": 4
+    },
+    {
+      "myRangeA": 45,
+      "myRangeB": 55,
+      "myRangeC": 60,
+      "id": 5
     }
   ]
 }

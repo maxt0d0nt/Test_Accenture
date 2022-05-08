@@ -1,7 +1,5 @@
 
 import React, { useState } from 'react';
-import '../components/Slider.css';
-import '../components/Question.css';
 import { Link } from 'react-router-dom';
 
 
@@ -90,6 +88,12 @@ export const Home = () => {
         
           <div className='Btn'>
           <button className="btn btn-danger btn-lg">Submit</button>
+          </div>
+
+          <div className='Btn'>
+          <Link to="/data">
+          <button className="btn btn-danger btn-lg">Show Result</button>
+          </Link>
           </div>
           </form>
           

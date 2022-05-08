@@ -6,33 +6,32 @@ import { RadialTotal } from './RadialTotal';
 
 export const Results = () => {
 
-  const [posts, setPosts] = useState(null)
-
-  
+  const [posts, setPosts] = useState("")
 
       useEffect(() => {
-        fetch('http://localhost:8000/posts')
+        fetch('http://localhost:8000/range')
         .then(response => response.json())
         .then(data => setPosts(data));
       },[])
 
-
+      const arrayLast = posts.length - 1
+      
   return (
     <>
-    <div class="container">
+    <div className="container">
       
-        <div class="row">
-            <div class="col-sm-6 d">
+        <div className="row">
+            <div className="col-sm-6 d">
               {posts && < RadialBar
-              valorA={posts[0].valorA}
-              valorB={posts[0].valorB}
-              valorC={posts[0].valorC}
+              valorA={posts[arrayLast].myRangeA}
+              valorB={posts[arrayLast].myRangeB}
+              valorC={posts[arrayLast].myRangeC}
                         />}
     
               </div>
-            <div class="col-sm-6">
+            <div className="col-sm-6">
             {posts && < RadialTotal
-                        valorTotal={posts[0].valorTotal} />}
+                        valorTotal={(posts[arrayLast].myRangeA+posts[arrayLast].myRangeB+posts[arrayLast].myRangeC)/3} />}
             </div>
           </div>
     </div>
