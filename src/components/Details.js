@@ -13,7 +13,7 @@ export const Details = () => {
     <h4><i className="fa-regular fa-lightbulb"></i>TIPS</h4>
     <p className='tip'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vestibulum maximus. Fusce tincidunt sapien porta rutrum dictum.  </p>
       <Link to="/">
-         <button type="button" className='btn btn-danger btn-lg'>Test Again</button>
+         <button type="button" className='btn btn-secondary btn-lg'>Test Again</button>
       </Link>
   </div>
 </div>

@@ -15,18 +15,15 @@ export const Home = () => {
     const handleSubmit = (e) => {
     e.preventDefault();
 
-    let range ={ myRangeA, myRangeB, myRangeC }
-
+    let range ={ myRangeA: Number(myRangeA), myRangeB: Number(myRangeB), myRangeC: Number(myRangeC) }
+      
       fetch('http://localhost:8000/range', {
         method: 'POST',
-        header: { "Content-Type": "application/json" },
+        headers: {"Content-type":"application/json"},
         body: JSON.stringify(range)
-      }).then(() => {
-        console.log("added")
-        console.log(range)
-        
-        
-      })
+      }).then(response => response.json())
+      .then( data => {console.log("Success!!")})
+      .catch(error => console.log(error))
 
       }
   
@@ -47,7 +44,7 @@ export const Home = () => {
         <div className='col'>
             <div className="row">
             <div className="question-item">
-                <h3>Pregunta 1</h3>
+                <h3>If you make a mistake on this team. It is often hold against you?</h3>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
@@ -60,7 +57,7 @@ export const Home = () => {
 
             <div className="row">
             <div className="question-item">
-                <h3>Pregunta 2</h3>
+                <h3>It is safe to take a risk on this team?</h3>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
@@ -73,7 +70,7 @@ export const Home = () => {
 
             <div className="row">
             <div className="question-item">
-                <h3>Pregunta 3</h3>
+                <h3>Working with members of this team, my unique skills and talents are valued and utilized?</h3>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
@@ -84,25 +81,20 @@ export const Home = () => {
             </div>
             </div>
           </div>
-        
-        
+
           <div className='Btn'>
-          <button className="btn btn-danger btn-lg">Submit</button>
+          <button className="btn btn-outline-success btn-lg">Submit</button>
           </div>
 
           <div className='Btn'>
           <Link to="/data">
-          <button className="btn btn-danger btn-lg">Show Result</button>
+          <button className="btn btn-outline-secondary btn-lg">Show Result</button>
           </Link>
           </div>
-          </form>
+      </form>
           
-        
-        </div>
-     
+  </div>
   </>
-    
-
   )
 }
 

@@ -31,7 +31,7 @@ export const Results = () => {
               </div>
             <div className="col-sm-6">
             {posts && < RadialTotal
-                        valorTotal={(posts[arrayLast].myRangeA+posts[arrayLast].myRangeB+posts[arrayLast].myRangeC)/3} />}
+                        valorTotal={(posts[arrayLast].myRangeA + posts[arrayLast].myRangeB + posts[arrayLast].myRangeC) / 3} />}
             </div>
           </div>
     </div>
