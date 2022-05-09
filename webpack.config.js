@@ -1,36 +1,44 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-
-        const ruleForStyles = {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        }
-
-        const ruleForJavaScript = {
+            const ruleForJavaScript = {
                 test:/\.js$/,
                 loader: 'babel-loader',
                 options: {
                     presets: [
-                        ['@babel/preset-react',
-                        {
-                            runtime: 'automatic'
-                        }]
-                    ]
+                        '@babel/preset-env', ['@babel/preset-react',{"runtime": "automatic"}]
+                        
+                           ],
                 }
-                
             }
 
-    const rules = [ruleForJavaScript, ruleForStyles]
+            const ruleForCSS =
+                  {
+                    test: /\.css$/i,
+                    use: ["style-loader", "css-loader"],
+                  }
+
+    const rules = [ruleForJavaScript, ruleForCSS]
 
     module.exports = {
         output: {
-            path: path.resolve(__dirname, 'build')
+            path: path.resolve('./build')
+        },
+
+        mode: 'development',
+
+      
+        devServer: {
+            
+              port: 3000
         },
 
         plugins: [
-           new HtmlWebpackPlugin({ template: 'src/index.html',
-          })
+           new HtmlWebpackPlugin({ 
+            title: "insigthscan",   
+
+            template: './public/index.html'
+          }),
         ],
     
         module: { rules }

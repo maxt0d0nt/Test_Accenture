@@ -29,6 +29,12 @@
       "myRangeB": 50,
       "myRangeC": 50,
       "id": 5
+    },
+    {
+      "myRangeA": 32,
+      "myRangeB": 36,
+      "myRangeC": 30,
+      "id": 6
     }
   ]
 }
