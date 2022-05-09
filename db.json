@@ -35,6 +35,24 @@
       "myRangeB": 36,
       "myRangeC": 30,
       "id": 6
+    },
+    {
+      "myRangeA": 81,
+      "myRangeB": 87,
+      "myRangeC": 89,
+      "id": 7
+    },
+    {
+      "myRangeA": 34,
+      "myRangeB": 42,
+      "myRangeC": 50,
+      "id": 8
+    },
+    {
+      "myRangeA": 55,
+      "myRangeB": 43,
+      "myRangeC": 69,
+      "id": 9
     }
   ]
 }

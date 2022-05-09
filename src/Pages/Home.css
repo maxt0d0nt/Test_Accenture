@@ -6,6 +6,7 @@
 
 .welcome{
     padding: 25px;
+    height: 120px;
 }
 
 .container-home {
@@ -34,5 +35,6 @@
     margin: auto;
     margin-top: 25px;
     display: flex;
-    height: 100px;
+    height: 125px;
 }
+

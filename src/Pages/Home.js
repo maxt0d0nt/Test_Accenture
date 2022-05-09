@@ -35,6 +35,7 @@ export const Home = () => {
       <h3>Uncover the Power of Psychological Safety with InsightScan</h3>
      
       <h5> Please answer the following questions: </h5>
+      
     </div>
     
    
@@ -45,6 +46,7 @@ export const Home = () => {
             <div className="row">
             <div className="question-item">
                 <h3>If you make a mistake on this team. It is often hold against you?</h3>
+                <p>Please answer with a scale from 0 to 100</p>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
@@ -58,6 +60,7 @@ export const Home = () => {
             <div className="row">
             <div className="question-item">
                 <h3>It is safe to take a risk on this team?</h3>
+                <p>Please answer with a scale from 0 to 100</p>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
@@ -71,6 +74,7 @@ export const Home = () => {
             <div className="row">
             <div className="question-item">
                 <h3>Working with members of this team, my unique skills and talents are valued and utilized?</h3>
+                <p>Please answer with a scale from 0 to 100</p>
                   <div className='slider-container'>
                     <div className='question-slider'>
                       <label for="customRange2" className="form-label"></label>
